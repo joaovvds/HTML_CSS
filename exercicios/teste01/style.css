@@ -1,0 +1,51 @@
+
+@font-face {
+    font-family: 'face';
+    src: url('fonts/EasterFont St.ttf');
+    height: normal;
+    width: normal;
+
+}
+body {
+    background-image: linear-gradient(to left, #eed2f1, #eed2f1, #eed2f1);
+}
+
+
+div { 
+    font: 30px 'face';
+    text-align: center;
+    background-color: #e1b6ec;
+    height: 300px;
+    width: 300px;
+    border: 3px solid rgba(255, 0, 153, 0.082);
+    border-radius: 30px;
+
+    box-shadow: 3px 3px 3px rgb(216, 45, 255) ;
+
+    padding: 10px 10px 20px 10px;
+
+
+    outline: 6px double black;
+
+    margin: auto;
+
+}
+img {
+    height: 200p;
+    width: 200px;
+    border-radius: 200px;
+    border: 5px solid rgb(255, 255, 255);
+   
+    
+}
+p {
+    text-align: center;
+    font-size: 24px
+}
+div > p {
+    display: none;
+}
+div:hover > p { 
+    display: block;
+    
+}

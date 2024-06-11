@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 7px double blue;
+            border-radius: 10px 10px 0px 0px;
+
+        }
+        nav{
+            background-color: rgba(102, 102, 102);
+            padding: 3px;
+            box-shadow: 1px 1px 1px black;
+
+                }
+                /* A e filho de nav */
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            margin-right: 30px;
+            
+            /*mae > filho:pseudoclasse  */
+        }
+        nav > a:hover {
+            text-decoration: underline;
+    
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article {
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color: rgb(132, 131, 131);
+        }
+        footer {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 4px;
+            margin: 0px;
+        }
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- não confundir header = cabeçalho com head = cabeça 
+     são visto como uma div header, main, div,-->
+    <header>
+        <h1>E meu site</h1>
+        <!-- nav = navegação para menus
+             -->
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <!--main = o conteudo princial -->
+    <main>
+        <!-- section = seção demtro do site -->
+        <section id="assuntos">
+            <p>Noticias Politica Tecnologia</p>
+
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>noticias sobre o brasil</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum similique velit dolor, vero hic, numquam ipsam error saepe voluptatem, ea placeat? Doloremque vero hic at perferendis odio? Ab, nemo laboriosam!</p>
+                <aside>
+                     <p>artigo escrito por min</p>
+                </aside>
+            </article>
+        </section>
+        
+
+    </main>
+    <!-- footer rodape -->
+    <footer>
+        <p>desenvolvido pelo curso em video</p>
+
+    </footer>
+    
+</body>
+</html>

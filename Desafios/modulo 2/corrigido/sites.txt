@@ -1,0 +1,4 @@
+MockFlow.com para planejar seu site e essencial de como vai ser a estrutura desse site 1 layot 2 paleta de cores  3 fonts de texto  
+tambem tem o site figma
+google fonts - para pegar fontes do google
+dafonts - fontes fora do google para baixar

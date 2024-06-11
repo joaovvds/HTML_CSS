@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <H1>Imagem dinâmica</H1>
+    <p>Tente abrir esse site em vários dispositivos diferentes
+        ou simplesmente aumente e diminua o tamano do seu navegador. 
+    </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png"> <!--começa sempre do menor tamanho ordem crescente
+        media da um limite da largura da maxima ou minima da imagem com max-width: 750px -->
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexível">
+    </picture>
+    <h1>Reproduzindo Áudio</h1>
+    <p>Vamos aprender a reproduzir áudios em HTML5.</p>
+    <!-- <audio src="midia/audio.mp3" controls autoplay ></audio>
+     primeira maneira de escutar audios no site .
+        COMPATIVEL 100% COM OS NAVEGADORES MP3 WAV OGG-->
+
+    <audio preload="metadata" autoplay controls loop><!--essa e a segunda opção
+    E em preload o padrão e auto que carrega todo arquivo de audio(não e recomendado) mais colocamos metadata para carregar apenas informações importantes do audio e loop recomeça o audio -->
+        <source src="midia/audio.mp3" type="audio/mpeg">
+        <source src="midia/auido.ogg" type="audio/ogg">
+        <source src="midia/audio.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/audio.mp3">Clique aqui para baixa o arquivo mp3</a></p>
+    </audio>
+
+
+</body>
+</html>
+
+<!--
+    teste de conhecimento pdf  exc 11 modulo 1 
+    
+c - use sempre imagens com qualidade e resolução balanceadas
+b - diminuição na taxa de retenção e possivel penalização em mecanismos de busca.
+a - <picture>, source e <img> 
+d - size, type e src
+d - <audio>
+c - player 
+B - o arquivo de audio sera totalmente carregado por padrao
+A - <video>
+C - .mp4 .m4v .webm .ogv
+b - <iframe>
+-->

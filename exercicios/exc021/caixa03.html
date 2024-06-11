@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bordas personalizadas</title>
+    <style>
+        h1 {
+
+            border: 12px solid transparent;
+            padding: 10px;
+            /* shorthand abaixo */
+            border-image: url('borda.png') 27 repeat;
+            /* imagem 80x80  transparente 9 quadrado e dentro 9 circulos*/
+
+            /* 
+            border-image-source: url(); link da imagem ou a imagem no seu pc
+            border-image-slice: 20; cortes nas imagem da borda 
+            border-image-repeat: repeat;  repete as imagem das boardas 
+             */
+        }   
+    </style>
+</head>
+<body>
+    <h1>teste de borda </h1>
+    
+</body>
+</html>
