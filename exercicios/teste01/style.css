@@ -6,7 +6,13 @@
     width: normal;
 
 }
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
 body {
+
     background-image: linear-gradient(to left, #eed2f1, #eed2f1, #eed2f1);
 }
 
@@ -28,6 +34,7 @@ div {
     outline: 6px double black;
 
     margin: auto;
+    margin-top: 20px;
 
 }
 img {

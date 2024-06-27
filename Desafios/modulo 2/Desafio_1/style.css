@@ -20,7 +20,10 @@ body {
 
 header {
         background-image: linear-gradient(to bottom, #86cf86, #6fba6f, #457c45);
-        border: 0px;
+        padding: 50px;
+        margin: -10px;
+        
+
 
                
 }
@@ -28,34 +31,61 @@ header > h1, #titulo2{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+
+
+    
+}
+header nav {
+    padding-top: 80px;
+    margin: -40px;
     
 }
 
 nav > a {
     font-style: bold;
     color: white;
+    padding-right: 5px;
+    padding-left: 5px;
     text-decoration: none;
    
 }
 nav > a:hover {
+    color: rgb(184, 184, 184);
     border: 1px solid rgba(255, 255, 255, 0.985);
     border-radius: 6px;
 }
 
 main {
-
     background-color: white;
     box-shadow: 1px 1px 1px 2px rgba(0, 0, 0, 0.175);
+    margin: auto;
+    margin-top: -20px;
+    width: 800px;
 }
 
 
 main > h2, h1{
+    color: rgb(80, 118, 80);
     font-family: 'face1';
+    text-indent: 20px;
+    padding-top: 10px;
+
+}
+main p {
+    margin: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 2em;
 }
 
-footer > p{
+
+footer  p{
     text-align: center;
     color: white;
     background-color: cadetblue;
+    padding: 10px;
+    margin: -10px;
 }
 
