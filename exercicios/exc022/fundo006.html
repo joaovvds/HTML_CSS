@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FundO Fixo de tela</title>
     <style>
         body {
             height: 100vh;
+             /* 
              background-color: black;
              background-image: url('imagens/wallpaper002.jpg');
              background-position: center top;
-             background-repeat: repeat-y;
-             background-size: cover; 
-             /* cover adapta o fundo de acordo com o tamanho do vh ele nao
+             background-repeat: no-repeat;
+             background-size: cover;  
+             */
+
+             /* c over adapta o fundo de acordo com o tamanho do vh ele nao
              exibe 100% da imagem mais ele ocupa 100% da vh */
+
+             /* 
+             background-attachment: fixed; 
+             */
+
+             /* background-attachment: fixed - deixa o fund fixo 
+             o padrão e scroll que o fundo rola junto */
+            
+            /* _____________________________________________________________________________ */
+             /* Shorthand - Background 
+              ordem: Color > image > position > repeat > [size] 
+              > attachment
+             */
+             background:black url('imagens/wallpaper002.jpg') center top no-repeat fixed;
+             background-size: cover;
+            /* a imagem nao aparece com o size dentro da shorthand */
         }
 
         main {
             background-color: white;
-            width: 400px;      
+            max-width: 400px;      
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
