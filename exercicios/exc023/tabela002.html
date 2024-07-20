@@ -32,18 +32,19 @@
         }
 
         /*Cabeçalho fixo na tabela, a tabela tem que
-        ter uma position relativa. e aqui embaixo sticky = colagem*/
+        ter uma position relativa. e aqui embaixo 
+        sticky = colagem*/
         thead > tr > th  {
             position: sticky;
             top: -1px;
             background-color: #383838;
         }
 
-        tbody > tr:nth-child(odd) { /* 2n-1*/
+        tbody > tr:nth-child(odd) { /* 2n-1 = impar*/
             background-color: white;
         }
 
-        tbody > tr:nth-child(even) { /*2n*/
+        tbody > tr:nth-child(even) { /*2n = par*/
             /*
              efeito zebrado  tbody > tr:nth-child(2n)  2n significa pular de 2 em 2.
             e se eu coloco tbody > tr:nth-child(odd)  odd - significa impar e even e par
@@ -52,9 +53,8 @@
             posso colocar os dois no style e mudar o background-color
             individual de cada
 
-            tbody > tr:nth-child(even) par
-
             tbody > tr:nth-child(odd) impar
+            tbody > tr:nth-child(even) par
             */
             background-color: lightgray;
 
