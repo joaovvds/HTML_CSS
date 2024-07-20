@@ -13,6 +13,8 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
+
         }
         td, th {
             border: 1px solid black;
@@ -27,6 +29,14 @@
         thead, tfoot {
             background-color: rgb(0, 0, 0);
             color: white;
+        }
+
+        /*Cabeçalho fixo na tabela, a tabela tem que
+        ter uma position relativa. e aqui embaixo sticky = colagem*/
+        thead > tr > th  {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
         }
 
         tbody > tr:nth-child(odd) { /* 2n-1*/
@@ -199,6 +209,12 @@
 
         </tfoot>
     </table>
-    
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora rerum sunt numquam pariatur, unde optio corporis in eos accusamus consequuntur obcaecati similique veritatis facilis. Sapiente maxime vel assumenda architecto non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, eius libero. Saepe et vitae aut dolor iure voluptatibus rerum molestiae, doloribus inventore dignissimos expedita, voluptatem vero, blanditiis exercitationem nostrum obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugiat possimus culpa cum repellat, facilis sed unde consequuntur maiores ipsum, rerum nesciunt atque fugit, odio asperiores libero repudiandae accusamus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus eligendi rerum fugiat nostrum doloremque consequatur sapiente reiciendis, iure excepturi, magni dolorem quae dicta vitae illum voluptate ipsam officia. Neque.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora rerum sunt numquam pariatur, unde optio corporis in eos accusamus consequuntur obcaecati similique veritatis facilis. Sapiente maxime vel assumenda architecto non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, eius libero. Saepe et vitae aut dolor iure voluptatibus rerum molestiae, doloribus inventore dignissimos expedita, voluptatem vero, blanditiis exercitationem nostrum obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugiat possimus culpa cum repellat, facilis sed unde consequuntur maiores ipsum, rerum nesciunt atque fugit, odio asperiores libero repudiandae accusamus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus eligendi rerum fugiat nostrum doloremque consequatur sapiente reiciendis, iure excepturi, magni dolorem quae dicta vitae illum voluptate ipsam officia. Neque.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora rerum sunt numquam pariatur, unde optio corporis in eos accusamus consequuntur obcaecati similique veritatis facilis. Sapiente maxime vel assumenda architecto non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, eius libero. Saepe et vitae aut dolor iure voluptatibus rerum molestiae, doloribus inventore dignissimos expedita, voluptatem vero, blanditiis exercitationem nostrum obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugiat possimus culpa cum repellat, facilis sed unde consequuntur maiores ipsum, rerum nesciunt atque fugit, odio asperiores libero repudiandae accusamus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus eligendi rerum fugiat nostrum doloremque consequatur sapiente reiciendis, iure excepturi, magni dolorem quae dicta vitae illum voluptate ipsam officia. Neque.</p>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora rerum sunt numquam pariatur, unde optio corporis in eos accusamus consequuntur obcaecati similique veritatis facilis. Sapiente maxime vel assumenda architecto non. Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, eius libero. Saepe et vitae aut dolor iure voluptatibus rerum molestiae, doloribus inventore dignissimos expedita, voluptatem vero, blanditiis exercitationem nostrum obcaecati? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste fugiat possimus culpa cum repellat, facilis sed unde consequuntur maiores ipsum, rerum nesciunt atque fugit, odio asperiores libero repudiandae accusamus sequi! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita voluptatibus eligendi rerum fugiat nostrum doloremque consequatur sapiente reiciendis, iure excepturi, magni dolorem quae dicta vitae illum voluptate ipsam officia. Neque.</p>
 </body>
 </html>
