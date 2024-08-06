@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Teste de Formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="off">
+        <p>
+            <label for="iusy">Usúario: </label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="15" placeholder="Nome do Usúario" autocomplete="username"> 
+        </p>
+        <!--
+        min lenght e max length e usado para dar limites de caracteres tanto no nome do usuario quanto na senha podem ser usado.
+
+        size - e o tamanho da caixa mais não 
+        significa que o tamanho do nome ou senha e ate tal tamanho
+        ele cria uma rolagem se ultrapassar o limite da caixa.
+
+        placeholder - e usado para colocar palavras para ajudar o usuario.
+        
+        autocomplete pode ser usado no input tambem
+         e com mais opçoes para o navegador reconhecer
+         new-password e para uma nova senha ou uma senha nova
+         e current-password e usado para senha atual e o navegador 
+         reconhece e procura sua senha atual -->
+        <p>
+            <label for="isen">Senha:  </label>
+            <input type="password" name="sen" id="isen" required minlength="8" size="8" placeholder="Senha" autocomplete="current-password">  
+             
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+    
+</body>
+</html>
