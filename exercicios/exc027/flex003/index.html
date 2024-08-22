@@ -10,35 +10,45 @@
             background-color: lightsalmon;
 
             display: flex;
-            flex-direction: column;
+            /* o padrao e flex-direcion: row; */
+
             /* tamanho de um bloco vai depender do conteudo que esta dentro dele */
 
-            flex-wrap: wrap; 
+            /* o padrao e flex-wrap: nowrap; */
+            
             /*
              O item quebra pra direção do cross-axis 
             e o wrap-reverse quebra pra direção oposta do "cross-axis" 
             */
+
+            /* shorthamd flex-flow */
+            height: 200px;
+            flex-flow: column wrap;
+
+        
         
         }
-
+        /* filho item dentro do conteiner */
         div.item {
             background-color: lightskyblue;
             border: 1px solid black;
             text-align: center;
             padding: 10px;
+            flex: auto;
         }
+
 
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item">A</div>
-        <div class="item">B</div>
-        <div class="item">C</div>
-        <div class="item">D</div>
-        <div class="item">E</div>
-        <div class="item">F</div>
-        <div class="item">G</div>
+        <div class="item">Exempo de bloco A</div>
+        <div class="item">Exempo de bloco B</div>
+        <div class="item">Exempo de bloco C</div>
+        <div class="item">Exempo de bloco D</div>
+        <div class="item">Exempo de bloco E</div>
+        <div class="item">Exempo de bloco F</div>
+        <div class="item">Exempo de bloco G</div>
     </div>
     
 </body>
