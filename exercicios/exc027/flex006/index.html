@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        /* 
+        1 -  jUSTIFY-CONTENT : serve para alinhar o conteúdo, alinhar os itens dentro do eixo principal.
+        2 -  ALIGN-ITEMS: serve para alinhar os conteúdos, itens dentro do eixo transversal.
+        3 -  ALIGN-CONTENT: serve para alinhar os elementos do eixo transversal quando eles estão empacotados. 
+        
+        o padrão do align-content é atretch
+        align-content so funciona quando eu estou usando wrap no flex-flow
+
+        space-round; dobra o espaço começa no primeiro ate o segundo
+        e o ultimo espaço dobra o de cima 
+        */
+
+    div.conteiner {
+        background-color: lightsalmon;
+        
+        display: flex;
+        flex-flow: row wrap;
+        align-content: space-around;
+        height: 400px;
+        
+    
+    }
+
+    div.item {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 40px;
+        
+        
+    
+    }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+        <div class="item">K</div>
+        <div class="item">L</div>
+        
+
+
+    </div>
+    
+</body>
+</html>
