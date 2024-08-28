@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        div.conteiner {
+            background-color: lightsalmon;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        /*
+        flex-shrink: 1: é o padrão = ele encolhe, é o 0 ele não deixa encolher.
+
+        flex-grow: 0: é padrão. = 0 ele não e aumenta e 1 ele deixar aumenar.
+        */
+        /*flex-grow: 2; - cresce o dobro do 1 tamanho do anterior do item
+          não cresce o dobro se colocar 2 e 2  eles ficam do mesmo tamanho
+          1 e 4 ele cresce 4 vezes mais que o valor 1 
+          2 e 4 ele cresce o dobro
+          
+          flex-shrink: 2 ; - encolhe o dobro de 1 
+          2 e 2 eles encolhe do igual mesmo exemplo de cima so que encolhendo
+
+          flex-basis_flex-shrink_flex-grow
+          */
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+            /*os items encolhem ou aumentão apos 200px do flex-basis */
+            flex-basis: 200px;
+        }
+        /* shrink - encolhe / grow - aumenta */
+        #cxA {
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        
+        #cxB {
+            flex-shrink: 7;
+            flex-grow: 0;
+        }
+
+        #cxC {
+            flex-shrink: 0;
+            flex-grow: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+
+    
+</body>
+</html>

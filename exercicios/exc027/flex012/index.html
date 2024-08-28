@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            text-align: center;
+        }
+    
+        /* shorthand - 
+          flex = aumenta - encolhe - limite do filho ate onde vai .
+          flex = flex-grow  flex-shrink  flex-basis 
+          flex: 0 1 auto; o padrão.
+          flex: initial; e o padrão tbm
+          flex: 0 0 auto; não deixar ser flexivel nada 
+          flex: none; nada responsivel o mesmo de cima 
+          flex: 1 1 auto; o maximo de flexivel possivel
+          flex: auto; maximo flexivel
+          exemplo:
+          flex: 1 0 250px;
+        */
+        
+        #cxA {
+            /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px; */ 
+            flex: 0 1 200px;
+        }
+        
+        #cxB {
+             /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px; */
+            flex: 1 1 150px;
+        }
+
+        #cxC {
+             /* flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px; */
+            flex: 8 1 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+
+    
+</body>
+</html>
