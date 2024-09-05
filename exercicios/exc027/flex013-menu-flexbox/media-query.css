@@ -10,18 +10,26 @@
     Grandes Telas: acima de 1200px
      */
 
-@media screen and (min-width: 100vw) and (max-width: 768px) {
-
-    header {
-        text-align: center;
-    }
+@media screen and (min-width: 100vw) and (max-width: 600px) {
     
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      
+    }
+    header > h1 {
+        text-align: center;
+        margin: auto;
+    }
+   
     span#burguer {
         background-color: rgb(83, 82, 82);
         color: white;
         display: block;
         padding: 10px;
         cursor: pointer;
+      
     }
     
     span#burguer:hover {
@@ -29,13 +37,16 @@
         color: black;
     }
    header > nav {
-        width: 100vw;
         display: flex;
         flex-flow: column nowrap;
         display: none;
+        
    }
    nav > a {
+    margin: 2px;
     display: block;
+    width: 90vw;
+    
    }
 
 }

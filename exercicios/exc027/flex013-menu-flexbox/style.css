@@ -21,25 +21,27 @@ header {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+    align-items: center;
 
 }
     
     
 header > h1 {
     text-shadow: 1px 2px black;
-    border: 2px dotted black;
-    min-width: 40%;
-    flex: 1 1  250px;
+    flex: 0 0 200px;
+    
 }
 
 span#burguer {
     display: none;
+  
 }
 
-    
 header > nav {
-    padding: 10px;
+    display: flex;
+    flex-flow: row nowrap;
 }
+    
 nav > a {
     font-family: 'Courier New', Courier, monospace;
     background-color: black;
@@ -48,13 +50,14 @@ nav > a {
     text-decoration: none;
     border-radius: 5px;
     margin: 2px;
-    padding: 5px
+    padding: 10px;
+   
 
 }
 nav > a:hover {
     background-color: white;
     color: black;
-    transition: 0.3s;
+    transition: background-color 0.3s;
 }
 
 main {
